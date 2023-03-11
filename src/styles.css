@@ -143,134 +143,53 @@ section {
   z-index: -1;
 }
 
-
-@media (max-width: 1000px) {
-  .lastSection::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin-bottom: 20%;
-    display: block;
-    background: url(https://picsum.photos/g/1920/1080?random) top center;
-    background-size: cover;
-    transform: translateZ(-.5px) scale(1.6);
-    z-index: -1;
-  }
-
-  footer {
-    padding-top: 110%;
-  }
-}
-
-@media (max-width: 1080px) {
-  .lastSection::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin-bottom: 20%;
-    display: block;
-    background: url(https://picsum.photos/g/1920/1080?random) top center;
-    background-size: cover;
-    transform: translateZ(-.5px) scale(1.6);
-    z-index: -1;
-  }
-
-  footer {
-    padding-top: 110%;
-  }
-	header > h1 {
-		font-size: 3rem;
-		text-align: center;
-		position: absolute;
-		padding: 1rem;
-		background: #fafafa;
-		box-shadow: 0 0 20px #333;
-		top: 10%;
-		left: 50%;
-		transform: translateZ(-1px) scale(2) translate(-25%, -25%);
-	}
-	
-	header > h2 {
-		font-size: 3rem;
-		text-align: center;
-		position: absolute;
-		padding: 1rem;
-		background: #fafafa;
-		box-shadow: 0 0 20px #333;
-		top: 50%;
-		left: 50%;
-		bottom: 20%;
-		transform: translateZ(-1px) scale(2) translate(-25%, -25%);
-	}
+@media (max-width: 780px) {
 	h1,
 	h2 {
 		animation: gradient-animation 8s ease infinite;
 		background: linear-gradient(227deg, #00ffdd, #ff00ef);
-	  font-size: 3rem;
-	  text-align: center;
-	  position: absolute;
-	  padding: 1rem;
-	  background: #fafafa;
-	  box-shadow: 0 0 20px #333;
-	  top: 50%;
-	  left: 50%;
-	  transform: translateZ(-1px) scale(2) translate(-25%, -25%);
-	}
-}
-
-@media (max-width: 700px) {
-  .lastSection::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin-bottom: 40%;
-    display: block;
-    background: url(https://picsum.photos/g/1920/1080?random) top center;
-    background-size: cover;
-    transform: translateZ(-.5px) scale(1.6);
-    z-index: -1;
-  }
-
-  footer {
-    padding-top: 110%;
-  }
-	header > h1 {
-		font-size: 2rem;
+		background-size: 100% 400%;
+		color: #fff;
+		font-size: 4rem;
 		text-align: center;
 		position: absolute;
 		padding: 1rem;
-		background: #fafafa;
 		box-shadow: 0 0 20px #333;
-		top: 5%;
+		top: 50%;
 		left: 50%;
 		transform: translateZ(-1px) scale(2) translate(-25%, -25%);
 	}
 	
-	header > h2 {
-		font-size: 2rem;
-		text-align: center;
-		position: absolute;
-		padding: 1rem;
-		background: #fafafa;
-		box-shadow: 0 0 20px #333;
-		top: 50%;
-		left: 50%;
-		bottom: 30%;
-		transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+	.section1 h1, h2 {
+		z-index: 3;
+		transform: translate(-50%, -50%);
+		box-shadow: none;
 	}
-	h1,
-	h2 {
-	  font-size: 3rem;
-	  text-align: center;
-	  position: absolute;
-	  padding: 1rem;
-	  background: #fafafa;
-	  box-shadow: 0 0 20px #333;
-	  top: 50%;
-	  left: 50%;
-	  transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+	/* make fade once scrolled to, that way carousel is visible */
+	.section1projects h1 {
+		z-index: 3;
+		transform: translate(-50%, -50%);
+		box-shadow: none;
+	}
+	
+	.section1projects h2 {
+		z-index: 3;
+		transform: translate(-50%, -50%);
+		box-shadow: none;
+	}
+	
+	.section2 h1, h2 {
+		transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+		z-index: 3;
+	}
+	
+	.lastSection h1, h2 {
+		transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+		z-index: 3;
 	}
 }
+
+
 
 /*************************************************************
   HEADINGS
@@ -318,4 +237,8 @@ h2 {
 .lastSection h1, h2 {
   transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
   z-index: 3;
+}
+
+footer {
+	margin-top: 5%;
 }
